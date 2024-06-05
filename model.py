@@ -29,7 +29,7 @@ preprocessor = ColumnTransformer(
 pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('model', Sequential([
-        Dense(64, activation='relu', input_dim=5),
+        Dense(64, activation='relu', input_dim=4),
         Dense(64, activation='relu'),
         Dense(1)
     ]))
