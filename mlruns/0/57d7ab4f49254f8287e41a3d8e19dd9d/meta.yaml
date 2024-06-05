@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/57d7ab4f49254f8287e41a3d8e19dd9d/artifacts
+end_time: 1716232574871
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57d7ab4f49254f8287e41a3d8e19dd9d
+run_name: serious-bear-162
+run_uuid: 57d7ab4f49254f8287e41a3d8e19dd9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716232379179
+status: 4
+tags: []
+user_id: szymonbartanowicz

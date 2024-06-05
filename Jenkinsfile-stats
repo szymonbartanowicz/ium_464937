@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    parameters {
+        buildSelector( defaultSelector: lastSuccessful(), description: 'Which build to use for copying artifacts', name: 'BUILD_SELECTOR')
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: "main", url: "https://git.wmi.amu.edu.pl/s464937/ium_464937"
+            }
+        }
+        stage('Copy Artifact') {
+           steps {
+                withEnv(["BUILD_SELECTOR=${params.BUILD_SELECTOR}" ]) {
+                copyArtifacts fingerprintArtifacts: true, projectName: 'z-s464937-create-dataset', selector: buildParameter('$BUILD_SELECTOR')}
+            }
+        }
+         stage('Print stats') {
+            steps {
+                script {
+                    sh "bash ./script2.sh"
+                }
+            }
+        }
+        stage('Archive Results') {
+            steps {
+                archiveArtifacts artifacts: 'data/*', onlyIfSuccessful: true
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a7bad8d56b5a476193134123f3175c00/artifacts
+end_time: 1716053941729
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a7bad8d56b5a476193134123f3175c00
+run_name: brawny-stag-513
+run_uuid: a7bad8d56b5a476193134123f3175c00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716053939145
+status: 4
+tags: []
+user_id: szymonbartanowicz

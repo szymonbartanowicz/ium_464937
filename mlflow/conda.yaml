@@ -1,0 +1,12 @@
+name: MLflow_s464937
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - wheel
+      - mlflow
+      - tensorflow
+      - pandas
+      - scikit-learn

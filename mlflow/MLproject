@@ -1,0 +1,7 @@
+name: MLflow_s464937
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      epochs: { type: int, default: 20 }
+    command: 'python mlflow_model.py {epochs}'

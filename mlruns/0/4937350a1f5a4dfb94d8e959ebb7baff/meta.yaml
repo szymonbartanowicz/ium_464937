@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4937350a1f5a4dfb94d8e959ebb7baff/artifacts
+end_time: 1716232283577
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4937350a1f5a4dfb94d8e959ebb7baff
+run_name: luminous-gnat-829
+run_uuid: 4937350a1f5a4dfb94d8e959ebb7baff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716232281564
+status: 4
+tags: []
+user_id: szymonbartanowicz

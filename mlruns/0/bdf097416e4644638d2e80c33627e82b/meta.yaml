@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/bdf097416e4644638d2e80c33627e82b/artifacts
+end_time: 1716232202213
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bdf097416e4644638d2e80c33627e82b
+run_name: peaceful-pug-201
+run_uuid: bdf097416e4644638d2e80c33627e82b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716232198565
+status: 4
+tags: []
+user_id: szymonbartanowicz

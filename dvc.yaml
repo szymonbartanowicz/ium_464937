@@ -1,0 +1,5 @@
+stages:
+  train:
+    cmd: python train.py --epochs=10
+  predict:
+    cmd: python predict.py

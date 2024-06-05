@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b7c7e490ed0f4a6d98293d275b5f67a9/artifacts
+end_time: 1716053969998
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b7c7e490ed0f4a6d98293d275b5f67a9
+run_name: zealous-crow-502
+run_uuid: b7c7e490ed0f4a6d98293d275b5f67a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716053967858
+status: 4
+tags: []
+user_id: szymonbartanowicz

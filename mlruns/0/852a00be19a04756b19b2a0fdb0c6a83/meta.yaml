@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/852a00be19a04756b19b2a0fdb0c6a83/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 852a00be19a04756b19b2a0fdb0c6a83
+run_name: skillful-worm-708
+run_uuid: 852a00be19a04756b19b2a0fdb0c6a83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716053034879
+status: 1
+tags: []
+user_id: szymonbartanowicz
