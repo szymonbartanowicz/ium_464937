@@ -22,7 +22,7 @@ jobs:
 
       - name: Train
         run: |
-          python3 train.py --epochs ${{ github.event.inputs.epochs }}
+          python3 model.py --epochs ${{ github.event.inputs.epochs }}
 
       - name: Upload
         uses: actions/upload-artifact@v2
