@@ -30,31 +30,28 @@ jobs:
           name: model
           path: model.keras
 
-  # evaluation:
-  #   needs: training
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v2
+  evaluation:
+    needs: training
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-  #     - name: Install dependencies
-  #       run: |
-  #         python3 -m pip install --upgrade pip
-  #         pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install --no-cache-dir wheel kaggle pandas scikit-learn tensorflow
+      - name: Download Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: model
 
-  #     - name: Download Artifact
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: model
+      - name: Evaluate Model
+        run: |
+          python3 predict.py
 
-  #     - name: Evaluate Model
-  #       run: |
-  #         python3 predict.py
-
-  #     - name: Upload Evaluation Artifact
-  #       uses: actions/upload-artifact@v2
-  #       with:
-  #         name: evaluation
-  #         path: |
-  #           predictions.txt
-  #           rmse.txt
+      - name: Upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: evaluation
+          path: .
