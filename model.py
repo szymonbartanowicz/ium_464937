@@ -40,6 +40,6 @@ pipeline['model'].compile(optimizer='adam', loss='mse', metrics=['mae'])
 X_train_excluded = X_train.iloc[1:]
 y_train_excluded = y_train.iloc[1:]
 
-pipeline.fit(X_train_excluded, y_train_excluded, model__epochs=int(sys.argv[1]), model__validation_split=0.1)
+pipeline.fit(X_train_excluded, y_train_excluded, model__epochs=int(10), model__validation_split=0.1)
 
 pipeline['model'].save('powerlifting_model.h5')
