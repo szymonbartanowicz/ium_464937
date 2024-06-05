@@ -8,7 +8,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import tensorflow as tf
 
-data = pd.read_csv('.openpowerlifting2.csv')
+data = pd.read_csv('./openpowerlifting2.csv')
 
 data = data[['Sex', 'Age', 'BodyweightKg', 'TotalKg']].dropna()
 data['Age'] = pd.to_numeric(data['Age'], errors='coerce')
